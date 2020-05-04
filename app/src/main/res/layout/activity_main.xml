@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/logoIV"
+        android:layout_height="120dp"
+        android:src="@drawable/ibexdev_logo"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@id/logoIV"
+        android:text="@string/the_it_company"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_coverIV"
+        android:src="@drawable/software_developers" />
+</RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signBtnRL"
+            android:layout_alignTop="@id/waveIV"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/loginBtn"
+                android:gravity="center"
+                android:background="@drawable/ic_boaded_background"
+                android:text="@string/login_here"
+                android:textColor="@color/colorTextWhite"
+                android:padding="5dp"
+                android:onClick="showNewActivity" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/signupBtn"
+                android:gravity="center"
+                android:background="@drawable/ic_boaded_background"
+                android:text="@string/does_nt_have_account"
+                android:textColor="@color/colorTextWhite"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/loginBtn"
+                android:layout_marginLeft="30dp"
+                android:onClick="showNewActivity" />
+
+        </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/waveIV"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="-45dp"
+        android:src="@drawable/ic_ibexdevwave"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

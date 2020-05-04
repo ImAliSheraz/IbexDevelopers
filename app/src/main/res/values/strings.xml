@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ibex Developers</string>
+    <string name="login_here">Login!</string>
+    <string name="does_nt_have_account">Signup</string>
+    <string name="the_it_company">The IT Company</string>
+    <string name="loginpage">Login Page</string>
+</resources>
